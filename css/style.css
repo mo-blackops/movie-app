@@ -340,3 +340,108 @@ section h2 {
 .error {
   background: red;
 }
+
+/* ========================= */
+/* Responsive: Tablets       */
+/* ========================= */
+@media (max-width: 768px) {
+  .main-header .logo {
+    font-size: 22px;
+  }
+
+  section.now-playing,
+  .search {
+    padding: 40px 20px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .details-top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 20px;
+  }
+
+  .details-top img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 0;
+  }
+
+  .main-footer .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .main-footer .container .social-links {
+    justify-content: center;
+  }
+}
+
+/* ========================= */
+/* Responsive: Mobile        */
+/* ========================= */
+@media (max-width: 480px) {
+  .main-header {
+    padding: 15px 0;
+  }
+
+  .main-header .logo {
+    font-size: 20px;
+  }
+
+  .main-header ul li {
+    margin-left: 15px;
+  }
+
+  .main-header ul li a {
+    font-size: 14px;
+  }
+
+  section.now-playing,
+  .search {
+    padding: 30px 15px;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+
+  /* Keep slider posters a sane height on small screens */
+  .swiper-slide img {
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  /* Stack the search input and button */
+  .search-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search .container form input[type='text'] {
+    font-size: 16px; /* Prevents iOS zoom-on-focus */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .grid {
+    grid-gap: 15px;
+  }
+
+  .card-body {
+    font-size: 16px;
+  }
+
+  .details-top img {
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
