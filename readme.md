@@ -2,6 +2,8 @@
 
 A dynamic, responsive web application for discovering and exploring popular movies and TV shows using **Vanilla JavaScript** and **The Movie Database (TMDB) API**.
 
+[🔗 Live Demo](https://movie-app-blush-zeta.vercel.app/)
+
 ![Flixx App Screenshot](images/screenshot.png)
 
 ---
