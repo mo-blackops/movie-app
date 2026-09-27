@@ -212,9 +212,9 @@ function displayBackgroundImage(type, backgroundPath) {
   overlayDiv.style.backgroundSize = 'cover';
   overlayDiv.style.backgroundPosition = 'center';
   overlayDiv.style.backgroundRepeat = 'no-repeat';
-  overlayDiv.style.height = '100vh';
+  overlayDiv.style.height = '100%';
   overlayDiv.style.width = '100vw';
-  overlayDiv.style.position = 'absolute';
+  overlayDiv.style.position = 'fixed';
   overlayDiv.style.top = '0';
   overlayDiv.style.left = '0';
   overlayDiv.style.zIndex = '-1';
