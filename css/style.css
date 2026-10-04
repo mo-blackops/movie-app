@@ -411,10 +411,21 @@ section h2 {
     margin: 15px 0;
   }
 
-  /* Keep slider posters a sane height on small screens */
+  /* Slider: cap the slide width so one poster doesn't fill the screen */
+  .swiper {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Keep slider posters a sane height and fully visible on small screens */
   .swiper-slide img {
-    max-height: 420px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    /* max-height: 420px; */
     object-fit: contain;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); */
   }
 
   /* Stack the search input and button */
